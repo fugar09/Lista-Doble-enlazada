@@ -35,3 +35,8 @@ void Persona::setNombre(string nombre) {
 	this->nombre= nombre;
 }
 
+ostream & operator<<(ostream & out, Persona & p) {
+	out<<"Id: "<<p.getId()<<" Nombre: "<<p.getNombre();
+	return out;
+}
+

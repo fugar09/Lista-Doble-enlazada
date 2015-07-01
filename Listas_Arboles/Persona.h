@@ -10,6 +10,7 @@
 using namespace std;
 
 class Persona {
+	friend ostream & operator<<(ostream &, Persona &);
 private:
 	int id;
 	string nombre;
@@ -23,5 +24,6 @@ public:
 	string getNombre()  const;
 	void setNombre(string);
 };
+ostream & operator<<(ostream &, Persona &);
 
 

@@ -93,6 +93,21 @@ public:
 		return obtener->actual;
 	}
 
+	Iterador<T> begin() {
+		return Iterador<T>(inicio);
+	}
+
+	Iterador<T> end() {
+		return Iterador<T>(NULL);
+	}
+
+	Iterador<T> rBegin() {
+		return Iterador<T>(final);
+	}
+
+	Iterador<T> rEnd() {
+		return Iterador<T>(NULL);
+	}
 };
 
 template<class T>
